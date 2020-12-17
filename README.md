@@ -6,4 +6,4 @@
 
 Thanks for checking out this front-end coding challenge. I used Sass preproccesor to write my css files
 
-## Check the live page of the solution https://frontendmentor-challenges-pricing-component-with-toogle.vercel.app/
+## Check the live page of the solution https://frontend-mentor-challenges-fylo-data.vercel.app/
