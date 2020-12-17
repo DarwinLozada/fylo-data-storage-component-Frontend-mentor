@@ -1,0 +1,257 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+.attribution {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.container, body, .widget-container, .menu-container, .menu-container .action-section, .menu-container .action-section .icon-container, .memory-use-container, .memory-use-container .pop-up, .memory-use-container .capacity {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: #0c122c;
+}
+
+body img {
+  position: absolute;
+  z-index: -1;
+}
+
+body .mobile-img {
+  left: 0;
+  top: 0;
+  visibility: hidden;
+}
+
+body .desktop-image {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 55%;
+}
+
+.widget-container {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  gap: 1.4rem;
+  margin-bottom: 4rem;
+}
+
+.menu-container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 8px;
+  border-top-right-radius: 6rem;
+  padding: 3rem 10vw 3rem 2rem;
+  background-color: #1d2c67;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.menu-container .action-section {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 2.4rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: inherit;
+}
+
+.menu-container .action-section .icon-container {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border-radius: 10px;
+  width: 3rem;
+  height: 3rem;
+  margin-right: 1rem;
+  background-color: #0c122c;
+}
+
+.memory-use-container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  color: white;
+  padding: 2.4rem;
+  width: 35rem;
+  background-color: #1d2c67;
+  border-radius: 10px;
+}
+
+.memory-use-container .pop-up {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: absolute;
+  top: -30%;
+  right: 8%;
+  width: 9.5rem;
+  height: 4rem;
+  background-color: white;
+  color: gray;
+  padding: 0.7rem 0.5rem 0.7rem 0.5rem;
+  border-radius: 8px 8px 0px 8px;
+  font-size: 0.5rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.memory-use-container .pop-up .gb-number {
+  font-size: 2rem;
+  color: #0c122c;
+}
+
+.memory-use-container .pop-up .space-text {
+  font-size: 0.6rem;
+  font-weight: 700;
+  margin: 0.3rem 0rem 0rem 0.6rem;
+  letter-spacing: 0.1rem;
+}
+
+.memory-use-container .pop-up:after {
+  content: "";
+  position: absolute;
+  margin-top: -6px;
+  margin-left: -5px;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid white;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  right: -10.3px;
+  bottom: 0;
+}
+
+.memory-use-container .memory-usage {
+  width: 100%;
+  color: rgba(255, 255, 255, 0.644);
+}
+
+.memory-use-container .memory-usage span {
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.733);
+}
+
+.memory-use-container .capacity {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  margin-top: 0.4rem;
+  font-weight: 700;
+  color: rgba(240, 235, 235, 0.7);
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.memory-use-container .progress-bar {
+  background-color: #0c122c;
+  width: 100%;
+  height: 1.3rem;
+  border-radius: 10px;
+  margin-top: 1.4rem;
+  padding: 2.5px;
+}
+
+.memory-use-container .progress-bar .actual-progress {
+  position: relative;
+  background-image: -webkit-gradient(linear, left top, right top, from(#ffa399), to(#ff4d97));
+  background-image: linear-gradient(to right, #ffa399, #ff4d97);
+  width: 80%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.memory-use-container .progress-bar .actual-progress:after {
+  content: "";
+  position: absolute;
+  right: 0.7%;
+  top: 10%;
+  border-radius: 50%;
+  height: 0.8rem;
+  width: 0.8rem;
+  background-color: white;
+}
+
+@media (max-width: 984px) {
+  body {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .widget-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-top: 3rem;
+    gap: 1rem;
+  }
+  .menu-container {
+    width: 100%;
+  }
+  .memory-use-container {
+    width: 70vw;
+  }
+  .memory-use-container .pop-up {
+    top: 80%;
+    right: 30%;
+    border-radius: 8px;
+  }
+  .memory-use-container .pop-up:after {
+    visibility: hidden;
+  }
+  .desktop-image {
+    visibility: hidden;
+  }
+  .mobile-img {
+    visibility: visible !important;
+    width: 100%;
+    height: 100%;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
